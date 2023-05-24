@@ -1,8 +1,10 @@
 'use client';
 import { TextField } from "../component/Textfield"
 import { Title } from "@/component/Title";
-
+import { useProfil } from "@/hooks/useProfil";
 export default function Home() {
+
+  const { profil } = useProfil();
 
   const handleEvent = (e) => {
     e.preventDefault();
