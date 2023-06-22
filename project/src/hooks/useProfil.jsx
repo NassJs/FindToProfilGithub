@@ -6,7 +6,6 @@ export const useProfil = (name) => {
     const [profil, setProfil] = useState({});
 
     useEffect(() => {
-
         async function fetchData() {
             await axios.get(`https://api.github.com/users/${name}`)
                 .then((res) => {
